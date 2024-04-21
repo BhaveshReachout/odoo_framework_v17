@@ -1,13 +1,16 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'odoo framework',
-    'version': '1.0',
+    'version': '17.0.1.0',
     'website': '',
     'category': 'Sales',
     'summary': '',
     'description': """ """,
     'depends': [],
-    'data': [],
+    'data': [
+          'security/ir.model.access.csv',
+          'views/property_property_views.xml',
+         ],
     'demo': [],
     'installable': True,
     'assets': {
@@ -21,4 +24,6 @@
         ],
     },
     'license': 'LGPL-3',
+    'installable': True,
+    'application': True,
 }
