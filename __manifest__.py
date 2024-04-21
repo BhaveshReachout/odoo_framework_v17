@@ -15,6 +15,7 @@
     'installable': True,
     'assets': {
         'web.assets_backend': [
+            'odoo_framework_v17/static/src/js/my_test_field.js',
         ],
         'web.assets_frontend': [
         ],

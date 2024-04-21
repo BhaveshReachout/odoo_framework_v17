@@ -7,6 +7,7 @@ from odoo import _, api, Command, fields, models
 class PropertyProperty(models.Model):
     _name = 'property.property'
     _description = 'Property'
+    _order = "id desc"
 
     name = fields.Char('Property Name', required=True)
     description = fields.Text('Description')
@@ -22,3 +23,6 @@ class PropertyProperty(models.Model):
     garden_area = fields.Integer('garden_area')
     garden_orientation = fields.Selection(string='garden_orientation', selection=[(
         'north', 'North'), ('south', 'South'), ('east', 'East'), ('west', 'West'),], default='north',)
+        
+    def action_sold(self):
+        a = 10/0
